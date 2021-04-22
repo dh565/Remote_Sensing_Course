@@ -7,7 +7,7 @@ https://stackoverflow.com/questions/15721094/detecting-mouse-event-in-an-image-w
 @author: dhelman-lab {new 1 - change the text}
 
 =================================================================================
-========== This code contains a change in the header of the plotted data ========
+==================== This code changes the header of the Table ==================
 =================================================================================
 
 
