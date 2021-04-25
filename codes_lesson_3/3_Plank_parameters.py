@@ -9,7 +9,9 @@ c     = 3e8
 lamda = 9.7e-6          # in micrometers (um)
 
 # Note the units conversion!!!
-C1    = 2 * h * (c*100)**2 * 1000 * (100)**2 # x 1000 to convert to mW; x10^4 to convert to cm-2
+C1    = 2 * h * (c*100)**2 * 1000 * (100)**2 # x 1000 to convert to mW; x10^4 to convert m to cm
+                                             # note that h is J*s and J = m2 kg / s2 so need to convert
+                                             # m to cm here as well...
 C2    = h * (c*100) / k
 wn    = 1e4/(lamda*1e6) # wavenumber in (cm-1)-1
 
