@@ -48,7 +48,7 @@ def onclick(event):
    if event.xdata != None and event.ydata != None:
        x = event.xdata
        y = event.ydata
-       # This are my new changes:
+       # These are my new changes (I've pushed the new data into Channel's 3 layer):
        T_rad[2] = T_sea
        # We need to select a single layer (channel) from the 3-D array: 
        t = T_rad[2:11,int(y),int(x)] # note that I've expanded the array to start from 2
