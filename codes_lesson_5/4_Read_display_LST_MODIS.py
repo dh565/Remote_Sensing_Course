@@ -1,0 +1,4 @@
+# Read the downloaded MODIS tif file from GEE and display
+
+raster_MOD = rasterio.open('/content/drive/MyDrive/gdrive_folder/LST_MOD11A1_03022019_1000.tif')
+show((raster_MOD, 1))
