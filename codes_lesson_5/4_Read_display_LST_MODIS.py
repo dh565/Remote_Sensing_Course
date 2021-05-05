@@ -2,3 +2,6 @@
 
 raster_MOD = rasterio.open('/content/drive/MyDrive/gdrive_folder/LST_MOD11A1_03022019_1000.tif')
 show((raster_MOD, 1))
+
+# Let's get the coordinates of the tile
+raster_MOD.bounds
