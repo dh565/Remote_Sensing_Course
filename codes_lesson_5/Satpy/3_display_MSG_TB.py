@@ -1,0 +1,5 @@
+fig, ax = plt.subplots(figsize=(10,10))
+plt.imshow(scn["IR_097"].values, cmap="Greys_r")
+ax.set_axis_off()
+plt.colorbar(fraction=.04)
+plt.show()
