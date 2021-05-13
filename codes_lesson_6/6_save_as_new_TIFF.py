@@ -16,5 +16,5 @@ kwargs = src.meta
 # Update kwargs (change in data type)
 kwargs.update( dtype=rasterio.float64, count = 1)
 
-with rasterio.open(saved_file_name, 'w', **kwargs) as dst:
+with rasterio.open("/content/drive/MyDrive/gdrive_folder/" + saved_file_name, 'w', **kwargs) as dst:
           dst.write_band(1, array_input.astype(rasterio.float64))
