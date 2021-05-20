@@ -6,3 +6,6 @@ import geopandas as gpd
 from fiona.crs import from_epsg
 from rasterio.mask import mask
 import pycrs
+import xarray as xr
+import matplotlib
+import matplotlib.pyplot as plt
