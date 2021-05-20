@@ -4,8 +4,6 @@ import cartopy.crs as ccrs
 file_new    = '/content/drive/MyDrive/gdrive_folder/Clipped_Resampled_1km_LSASAF_MSG_DSSF.tif'
 LSASAF_DSSF = xr.open_rasterio(file_new)
 
-print(LSASAF_DSSF.nodatavals)
-
 array_input = LSASAF_DSSF
 
 plt.figure(figsize=(9,6))
