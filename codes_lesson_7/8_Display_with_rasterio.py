@@ -16,7 +16,7 @@ ax1.add_feature(cartopy.feature.RIVERS)
 
 #gl = ax.gridlines(draw_labels=False)
 p1 = array_input.plot(ax=ax1,
-             levels=15, vmin=50, vmax=80,
+             levels=15, vmin=400, vmax=800,
              cmap='viridis',
              transform=ccrs.PlateCarree(),
              add_colorbar=False)
