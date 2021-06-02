@@ -9,7 +9,7 @@ scale_res    = 1000
 # ============================================================================= #
 #var temps2013 = ee.ImageCollection('MODIS/006/MCD15A3H').filterDate('2015-12-25', '2018-12-25')
 img          = ee.Image(product_name + '/2017_03_15').select(band);
-fc           = ee.FeatureCollection('users/davidhelman1/AOI_Israel'); # HERE change it to your GEE address of your shp file 
+fc           = ee.FeatureCollection('users/davidhelman1/Spain_AOI_for_TVDI'); # HERE change it to your GEE address of your shp file 
   
 task = ee.batch.Export.image.toDrive(image=img,     # an ee.Image object.
                                      region         = fc.geometry().bounds(), # an ee.Geometry object.
