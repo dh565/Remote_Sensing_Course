@@ -2,12 +2,12 @@
 # and save the files in your folder or Google Drive, if you use the Google Colab...
 
 # Read the TIF files using rasterio
-NDVI = rasterio.open('/content/NDVI_22_03_2017.tif') # This is the name of your LST saved file
+NDVI = rasterio.open('/content/drive/MyDrive/gdrive_folder/NDVI_22_03_2017.tif') # This is the name of your LST saved file
 NDVI = NDVI.read(1) # read the data from the TIF file
 NDVI = NDVI*0.0001  # data need to be scaled for this product
 NDVI[NDVI <= 0.0] = np.nan # replace invalid, negative values with nan
 
-LST = rasterio.open('/content/LST_15_03_2017.tif') # This is the name of your NDVI saved file
+LST = rasterio.open('/content/drive/MyDrive/gdrive_folder/LST_15_03_2017.tif') # This is the name of your NDVI saved file
 LST = LST.read(1)   # read the data from the TIF file
 LST = LST*0.02      # data need to be scaled for this product
 
