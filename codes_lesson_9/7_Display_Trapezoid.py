@@ -28,7 +28,7 @@ ax1.plot(NDVI_vector[21:], MaxList[21:], '+', color='r')
 ax1.plot([0, 1], linhamax, color='r', markersize=8,\
                  label=f"Tsmax = {'%.1f'% b1} - {'%.1f' % abs(a1)} * NDVI")
 ax1.plot([0, 1], linhamin, color='b', markersize=8,\
-                 label=f"Tsmin = {'%.1f' % b2} - {'%.1f' % abs(a2)} * NDVI")
+                 label=f"Tsmin = {'%.1f' % b2} + {'%.1f' % abs(a2)} * NDVI")
 ax1.legend(loc='upper right', fontsize=12)
 ax1.set_ylim(top=324)
 ax1.set_xlabel("NDVI")
