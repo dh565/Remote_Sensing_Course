@@ -4,7 +4,7 @@ plt.subplots_adjust(left=0.125, right = 0.9, wspace=0.3)
 
 # Subplot LST
 img1 = ax1.imshow(TS, cmap='magma', vmin=280, vmax=305)
-ax1.set_title("TS - 16 days\n15/Mar/2017")
+ax1.set_title("TS - daily\n15/Mar/2017")
 divider = make_axes_locatable(ax1)
 cax1 = divider.append_axes("right", size="5%", pad=0.2)
 cbar = fig.colorbar(img1, cax=cax1)
