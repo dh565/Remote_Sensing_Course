@@ -34,12 +34,12 @@ print('')
 print('')
 
 plt.figure(1,figsize=(4,4)).clf()
-s = plt.scatter(x2, y2, marker='.', color='blue') 
+s = plt.scatter(x, y, marker='.', color='blue') 
 plt.xlabel('Modeled ET (mm day$^{-1}$)')
 plt.ylabel('Observed ET (mm day$^{-1}$)')
 plt.title('Comparison between eddy-covariance (observed) and FAO56 (modeled)') 
-plt.xlim([-1, 10.5])
-plt.ylim([-1, 10.5])
+plt.xlim([-1, 8])
+plt.ylim([-1, 8])
 
 # draw a 1:1 line:
 plt.plot([-10, 40], [-10, 40], 'k--', linewidth=0.9)
