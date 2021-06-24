@@ -1,4 +1,4 @@
-#3 clip the TVDI image to the sar data bounds
+#4 clip the TVDI image to the sar data bounds
 SAR = rasterio.open('/content/sentinel 1_data.tif')
 TVDI = rasterio.open('/content/TVDI.tif')
 TVDI.bounds
