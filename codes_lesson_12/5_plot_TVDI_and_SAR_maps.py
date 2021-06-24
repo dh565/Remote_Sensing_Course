@@ -1,4 +1,4 @@
-#4 plot the  TVDI image and the SAR data 
+#5 plot the  TVDI image and the SAR data 
 TVDI_clip = rasterio.open('/content/Clipped_new_MOD11A1_03022019.tif')
 
 
@@ -20,7 +20,7 @@ img2                    = ax2.imshow(array2,cmap='jet')
 
 # set colorbar, axes, and title for WRF
 cbar1 = fig.colorbar(img1, ax=ax1)
-cbar1.ax.set_ylabel('need to chnge')
+cbar1.ax.set_ylabel(r'$\overline{\gamma^o}$ [dB]')
 
 ax1.set_xlabel('x')
 ax1.set_ylabel('y')
@@ -30,7 +30,7 @@ ax1.set_aspect('auto')
 # set colorbar, axes, and title for MODIS
 cbar2 = fig.colorbar(img2, ax=ax2)
 
-cbar2.ax.set_ylabel('wet')
+cbar2.ax.set_ylabel('TVDI (unitless)')
 
 ax2.set_xlabel('x')
 ax2.set_ylabel('y')
