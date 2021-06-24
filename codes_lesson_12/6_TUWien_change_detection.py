@@ -1,4 +1,4 @@
-#5 TU Wien Change Detection Approach and plot Histogram 
+#6 TU Wien Change Detection Approach and plot Histogram 
 SAR_C = rasterio.open('/content/sentinel 1_data.tif')
 SAR_C = SAR_C.read(1) # read the data from the TIF file
 
