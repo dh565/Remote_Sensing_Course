@@ -51,6 +51,7 @@ lgd = ax1.legend(fancybox=True,loc=1)
  !!! Don't forget to change the axis's title to "Relative intensity"
 
  Another way to look at it is by changing y-axis to log scale - let's do that
+ Play with xlim and ylim functions to get something reasonable in your plot.
 
 # ========================================================================= #
 # ========================================================================= # 
