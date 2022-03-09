@@ -46,10 +46,9 @@ lgd = ax1.legend(fancybox=True,loc=1)
  What happened? why can't we see the B of the Earth?
  Let's normalize the Intensity by dividing it by Variable_name.max()
  
- Hint: play with the axis format (hint: use logarithmic scale) and range (1e4)
- Don't forget to change the axis's title to "Relative intensity"
-# ========================================================================= #
-# ========================================================================= # 
+ !!! Hint: play with the axis format (hint: use logarithmic scale) 
+ !!! and range (1e4). 
+ !!! Don't forget to change the axis's title to "Relative intensity"
 
  Another way to look at it is by changing y-axis to log scale - let's do that
 
