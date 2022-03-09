@@ -12,16 +12,13 @@ Created on Thu Feb  4 11:50:24 2021
    a function of wavelength (Planck's function)
 ============================================================================
 Inputs:
-
 wl  :: numpy array containing wavelengths [m] 
 T   :: temperature [K]
 
 Outputs:
-
 B   :: intensity [W sr**-1 m**-2 m**-1]
 ============================================================================
 """
-
 import numpy as np
 import matplotlib.pyplot as plt
 #import scipy.constants as spc # {useful shortcuts, including h, c, and kB}
@@ -29,7 +26,6 @@ import matplotlib.pyplot as plt
 # ========================================================================= #
 # Planck Function:
 # ========================================================================= #
-
 def PlanckFunc(wl,T): 
     wl = np.array(wl)   # if the input is a list or a tuple, make it an array
     
