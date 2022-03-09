@@ -20,13 +20,13 @@ B_body1  = PlanckFunc(lamdas, T1)
 fig = plt.figure(figsize=(3.5,2.5),dpi=300) 
 fig.subplots_adjust(bottom=0.1,top=0.9,left=0.1,right=0.95) 
 
-ax1 = fig.add_subplot(1,1,1)
+ax1 = fig.add_subplot(1,1,1) # set the size of the plot
 ax1.fill_between(lamdas*1e6, y1=np.zeros(lamdas.shape), y2=B_body1,
                  color='#e6ab02',alpha=0.2) 
-
 pl1l = ax1.plot(lamdas*1e6, B_body1, color='#e6ab02', 
                 linewidth=1.5,label=str(T1)+' K') 
 
+# Axes and legend:
 ax1.set_xlabel('Wavelength [\u00b5m]') 
 ax1.set_ylabel('Intensity [W sr$^{-1}$ m$^{-2}$ m$^{-1}]$')
 
