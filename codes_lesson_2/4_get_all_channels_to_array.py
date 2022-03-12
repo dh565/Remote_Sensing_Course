@@ -7,6 +7,6 @@ array = []
 # loop over channels and get them into the array
 for i in chl:
   array.append(np.flipud(ds[i]))
-data =np.stack((array),axis=0)
+data = np.stack((array),axis=0)
 # print shape of the array
 print(data.shape)
