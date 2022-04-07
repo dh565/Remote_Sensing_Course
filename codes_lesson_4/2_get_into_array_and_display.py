@@ -73,7 +73,7 @@ def onclick(event):
         '  \n' + 'CH10                     12.0                 '  + "{:.2f}".format(round[7]) + \
         '  \n' + 'CH11                     13.4                 '  + "{:.2f}".format(round[8]) + \
         '  \n' + '-----------------------------------------------------------' + \
-        # This are my new changes:
+        # This is new:
         '  \n' + 'SST                                                '  + "{:.2f}".format(round[0]) + '\N{DEGREE SIGN}C'
 
        ax[0,1].text(0.04,0.95,textbox, fontsize=10, verticalalignment='top')
