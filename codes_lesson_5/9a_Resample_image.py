@@ -3,7 +3,7 @@
 
 from osgeo import gdal, gdalconst
 
-# The tile needed to be resampled to teh new resolution
+# The tile needed to be resampled to the new resolution
 inputfile  = "/content/wrf_file.tif"
 input      = gdal.Open(inputfile, gdalconst.GA_ReadOnly)
 inputProj  = input.GetProjection()
