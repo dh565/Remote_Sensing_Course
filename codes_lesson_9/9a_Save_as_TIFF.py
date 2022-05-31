@@ -1,5 +1,5 @@
 # Save the TVDI array as a TIF file (using metadata from teh LST TIF file)
-with rasterio.open('/content/LST.tif') as src:
+with rasterio.open('/content/drive/MyDrive/gdrive_folder/LST_15_03_2017.tif') as src:
     raster = src.read(1)   
 
 kwargs = src.meta
