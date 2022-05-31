@@ -3,7 +3,7 @@ soil_mostire_list = []
 TVDI_list = []
 
 # Open point shapefile
-pointData  = gpd.read_file('/content/data_sm.shp') # YOU NEED to upload the data first, of course!
+pointData  = gpd.read_file('/content/drive/MyDrive/gdrive_folder/data_sm.shp') # YOU NEED to upload the data first, of course!
 
 # Get TVDI raster
 tvdiRaster = rasterio.open('/content/TVDI.tif')
