@@ -27,22 +27,22 @@ for val in NDVI_vector:
     TS_min_val = np.nan # all others get nan
     TS_max_val = np.nan
 
-  # Add found values to MiniList e MaxList lists
+  # Add found values to MiniList and MaxList lists
   MiniList += [TS_min_val]
   MaxList  += [TS_max_val]
 
 # Create line for minimum, lower border
 MiniList_fin = []
 NDVI_fin     = []
-for i, val in enumerate(MiniList):# exclude nan again
+for i, val in enumerate(MiniList):# make sure, again, we exclude the nan's
   if np.isfinite(val):
     MiniList_fin += [val]
     NDVI_fin += [NDVI_vector[i]]
 
-# Get the (a and b) coefficients of the lower linear regression
+# Get the (a and b) coefficients of the bottom linear regression equation
 MinPfit = np.polyfit(NDVI_fin[17:], MiniList_fin[17:], 1)
 
-# Create line for maximum border
+# Create the line for the upper border
 MaxList_fin = []
 NDVI_fin = []
 for i, val in enumerate(MaxList):
@@ -50,10 +50,10 @@ for i, val in enumerate(MaxList):
     MaxList_fin += [val]
     NDVI_fin += [NDVI_vector[i]]
 
-# Get the (a' and b') coefficients of the upper linear regression
+# Get the (a' and b') coefficients of the upper linear regression equation
 MaxPfit = np.polyfit(NDVI_fin[17:], MaxList_fin[17:], 1)
 
-# Generate the first and last wet limit and dry limit points
+# Generate the first and last wet and dry limit points
 a1, b1 = MaxPfit
 a2, b2 = MinPfit
 linhamax = [b1 + (a1 * 0), b1 + (a1 * 1)]# max linear regression for trapez
