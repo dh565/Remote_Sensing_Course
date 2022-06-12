@@ -1,7 +1,7 @@
 print(list_land_use)
 len(list_land_use)
 
-# Check teh land cover classification band for this product on GEE:
+# Check the land cover classification band for this product on GEE:
 # CGLS-LC100 Collection 3
 
 # We will use:
