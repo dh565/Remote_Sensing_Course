@@ -1,4 +1,5 @@
-with rasterio.open('/content/LAND_US100ME.tif') as src:
+# save the new file using the attributes of the original TIFF:
+with rasterio.open('/content/LAN_COVER_100m.tif') as src:
     raster = src.read(1)   
 
 kwargs = src.meta
