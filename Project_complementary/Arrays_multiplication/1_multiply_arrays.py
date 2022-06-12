@@ -11,6 +11,5 @@ out_arr = np.array(in_arr1) * np.array(in_arr2)
 print ("Resultant output array: ", out_arr)
 
 # Now you can use it with arrays created from the TIFFs
-# {Note: another way to do this is by using loops, but 
-# this is much more computaionally costly and would take
-# much more time}
+# {Note: another way to do this is by using loops, but this is computaionally costly 
+# and would take a much longer running time}
