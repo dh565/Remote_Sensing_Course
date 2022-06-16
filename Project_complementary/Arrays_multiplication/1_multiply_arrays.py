@@ -1,9 +1,6 @@
 # This is an example of how to multiply two 2-D arrays, such that x1 is multiplied by x1
 # and y1 by y1 of each array, avoiding algebraic matrix multiplication
-import math
-import os
 import numpy as np
-import pandas as pd
 
 in_arr1 = np.matrix([[2, -7, 5], [-6, 2, 0]])
 in_arr2 = np.matrix([[0, -7, 8], [5, -2, 9]])
