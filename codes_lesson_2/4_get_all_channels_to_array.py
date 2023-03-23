@@ -10,3 +10,6 @@ for i in chl:
 data = np.stack((array),axis=0)
 # print shape of the array
 print(data.shape)
+
+plt.imshow(data[0], interpolation='none')
+plt.show()
