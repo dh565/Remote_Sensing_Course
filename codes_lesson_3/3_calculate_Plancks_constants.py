@@ -14,6 +14,6 @@ C1    = 2 * h * (c*100)**2 * 1000 * (100)**2 # x 1000 to convert to mW; x10^4 to
                                              # we need to convert m to cm here as well...
 C2    = h * (c*100) / k
 
-# Notice that C1 and C2 are constant with values:
+# Notice that C1 and C2 are constants with values of:
 #  C1 = 1.1925e-5       # in mW (cm-1)-4 m-2 sr-1 
 #  C2 = 1.4402174       # in K (cm-1)-1
