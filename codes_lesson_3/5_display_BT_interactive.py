@@ -7,9 +7,9 @@ https://stackoverflow.com/questions/15721094/detecting-mouse-event-in-an-image-w
 @author: dhelman-lab {new 2 - change display color to grey}
 
 =================================================================================
-===============      This code displays the TB of the channels      =============
+===============      This code displays the BT of the channels      =============
 =================================================================================
-1) displays Tb 
+1) displays Tb (Brightness temperature)
 2) changes the header to Tb and degrees
 3) uses "{:.2f}".format() to display (in this case) 2 significant digits after
    the decimal point
