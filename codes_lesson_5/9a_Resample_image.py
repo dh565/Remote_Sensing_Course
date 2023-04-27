@@ -1,4 +1,4 @@
-# We need to resample one of the images to the spatial resolution of the
+# 9a_We need to resample one of the images to the spatial resolution of the
 # other. Let's resample WRF 2-km to the 1-km resolution of MODIS
 
 from osgeo import gdal, gdalconst
