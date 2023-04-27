@@ -1,4 +1,4 @@
-# Import GEE for python and get into your account
+# 2_Import GEE for python and get into your account
 import ee
 
 # Trigger the authentication flow.
