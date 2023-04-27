@@ -1,4 +1,4 @@
-# Read the WRF tif file and display
+# 5_Read the WRF tif file and display
 
 raster_wrf = rasterio.open('/content/wrf_file.tif')
 show((raster_wrf, 1))
