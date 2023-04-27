@@ -1,3 +1,4 @@
+# 1_Import important Packages
 import os
 import warnings
 
@@ -14,4 +15,4 @@ import math
 import numpy as np 
 import sklearn.metrics as metrics
 from osgeo import gdal, gdalconst
-from gdalconst import GA_ReadOnly
+#from gdalconst import GA_ReadOnly
