@@ -1,4 +1,4 @@
-# Now let's display both images together and see typical values:
+# 7_Now let's display both images together and see typical values:
 
 # set font size for title:
 plt.rcParams.update({'font.size': 12}) 
