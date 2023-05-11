@@ -10,3 +10,4 @@ import xarray as xr
 import matplotlib
 import matplotlib.pyplot as plt
 import cartopy
+import numpy as np
