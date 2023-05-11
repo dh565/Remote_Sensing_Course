@@ -1,3 +1,5 @@
+# 7_Resample clipped LSA-SAF files to the spatial resolution of a refernce file (MODIS, in our case).
+
 # We need to resample one of the images to the spatial resolution of the
 # other. Let's resample LSASAF 4-km to the 1-km resolution of MODIS
 
