@@ -1,3 +1,5 @@
+# 8_Save and show the new resampled SAF file
+
 # Show resampled LSASAF 
 # ------------------------------------------------------------------------------------------------------------------------- #
 file_new  = '/content/drive/MyDrive/gdrive_folder/Clipped_Resampled_1km_LSASAF_MSG_DSSF.tif'
