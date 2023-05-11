@@ -1,3 +1,5 @@
+# 6_Clip LSA-SAF files to the extent of the reference file (WRF)
+
 # Now we are ready to clip the raster with the polygon using the coords 
 # variable that we just created. Clipping the raster can be done easily with 
 # the mask function that we imported from rasterio, and specifying clip=True.
