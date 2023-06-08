@@ -1,4 +1,3 @@
-import gdal
 import rasterio
 import numpy as np
 from glob import glob
