@@ -33,6 +33,8 @@ def PlanckFunc(wl,T):
     h  = 6.625e-34      # Planck constant [J s] 
     c  = 3e8            # speed of light [m s**−1] 
     kB = 1.38e-23       # Boltzmann constant [J K**−1] 
+    
+    # This is Planck's function:
     B  = ((2*h*c**2)/(wl**5))/(np.exp((h*c)/(wl*kB*T))-1) 
     
     # {uncomment next line if import scipy.constants}:
