@@ -53,7 +53,7 @@ def onclick(event):
        ax[0,1].set_yticks([])
 
        # Write new text
-       textbox = 'Wavelength [\u00b5m]      Irr [mW m$^{-2}$ (cm$^{-1}$)$^{-1}$]'  + \
+       textbox = 'Wavelength [\u00b5m]      Rad [mW m$^{-2}$ (cm$^{-1}$)$^{-1}$]'  + \
         '  \n' + '----------------------------------------------------------'  + \
         '  \n' + '         0.6                         ' + str(round[0]) + \
         '  \n' + '         0.8                         ' + str(round[1]) + \
