@@ -87,7 +87,7 @@ def onclick(event):
        # Draw new lines
        ax[1,0].plot([0.6,0.8,1.6,3.9,6.2,7.3,8.7,9.7,10.8,12,13.4], t, color='black', marker='o', linestyle='dashed')
        ax[1,0].set_xlabel('Wavelength [\u00b5m]')
-       ax[1,0].set_ylabel('Irradiance [mW m$^{-2}$ (cm$^{-1}$)$^{-1}$]') # mW m-2 sr-1 (cm-1)-1
+       ax[1,0].set_ylabel('Radiance [mW m$^{-2}$ (cm$^{-1}$)$^{-1}$]') # mW m-2 sr-1 (cm-1)-1
 
        # ==================================================================== #
 
