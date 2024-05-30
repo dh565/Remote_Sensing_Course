@@ -51,7 +51,7 @@ def onclick(event):
        # These are my new changes (I've pushed the new data into Channel's 3 layer):
        T_rad[2] = T_sea
        # We need to select a single layer (channel) from the 3-D array: 
-       t = T_rad[2:11,int(y),int(x)] # note that I've expanded the array to start from 2
+       t = T_rad[2:11,int(y),int(x)] # note that I've expanded the array to start from 2 (i.e., channel 3 where I pushed my Tsea data)
        round = np.around(t, 9)       # ...and also changed the size of the array accordingly.
 
        # text =============================================================== #
