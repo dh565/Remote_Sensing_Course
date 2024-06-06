@@ -5,4 +5,4 @@ import ee
 ee.Authenticate()
 
 # Initialize the library.
-ee.Initialize()
+ee.Initialize(project='name_of_your_project')
