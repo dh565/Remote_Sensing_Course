@@ -1,7 +1,11 @@
 # Install these packages in Google Colab:
+# !pip uninstall -y numpy pandas rioxarray rasterio shapely
+!pip install numpy==1.25.2
+!pip install pandas
 !pip install rioxarray
-!pip install pycrs
-!pip install geopandas
-!pip install --no-binary shapely shapely --force
+!pip install rasterio
+!pip install shapely
 !pip install cartopy
-!pip install cftime
+!pip install rioxarray
+!pip install geopandas
+!pip install pycrs
