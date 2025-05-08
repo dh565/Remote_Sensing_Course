@@ -39,7 +39,7 @@ print(out_meta)
 # Next we need to parse the EPSG value from the CRS so that we can create a 
 # Proj4 string using PyCRS library (to ensure that the projection information 
 # is saved correctly).
-epsg_code = int(raster_MOD.crs.data['init'][5:])
+epsg_code = 4326
 print(epsg_code)
 
 # Now we need to update the metadata with new dimensions, transform (affine) 
