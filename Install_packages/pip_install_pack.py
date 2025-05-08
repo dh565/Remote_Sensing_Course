@@ -9,3 +9,4 @@
 !pip install rioxarray
 !pip install geopandas
 !pip install pycrs
+!pip install fiona
