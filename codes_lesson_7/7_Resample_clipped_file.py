@@ -5,18 +5,18 @@
 
 from osgeo import gdal, gdalconst
 
-# The tile needed to be resampled to teh new resolution
+# The tile needed to be resampled to the new higher spatial resolution:
 inputfile  = out_tif
 input      = gdal.Open(inputfile, gdalconst.GA_ReadOnly)
 inputProj  = input.GetProjection()
 inputTrans = input.GetGeoTransform()
 
-# The reference file for resampling
+# The reference file used for resampling the LSA-SAF clipped tile
 # ======================================================================================= #
 # This is the MODIS raster clipped to the extent of WRF 
-# (our reference extent) that we'll use as a reference of our new spatial resolution
+# (our reference tile). We'll use it to resample our SAF clipped tile.
 # ======================================================================================= #
-referencefile = path + 'Clipped_new_MYD11A1_03022019_1330.tif' 
+referencefile = path + 'Clipped_new_MYD11A1_03022019_1330.tif' # (change the name accordingly...)
 # ======================================================================================= #
 
 reference = gdal.Open(referencefile, gdalconst.GA_ReadOnly)
@@ -26,9 +26,8 @@ bandreference = reference.GetRasterBand(1)
 x = reference.RasterXSize 
 y = reference.RasterYSize
 
-# The output resampled file (WRF to 1 km)
 # ======================================================================================= #
-# This is the name we're giving to our new resampled SAF raster file:
+# This is the name we're giving our new resampled SAF raster tile:
 # ======================================================================================= #
 outputfile = path + 'Clipped_Resampled_1km_' + SAF_name + '.tif'
 # ======================================================================================= #
