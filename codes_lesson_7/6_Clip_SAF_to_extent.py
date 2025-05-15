@@ -14,7 +14,7 @@ print(out_meta)
 # Proj4 string using PyCRS library (to ensure that the projection information 
 # is saved correctly).
 epsg_code = 4326
-#epsg_code = int(raster_LSASAF.crs.data['init'][5:])
+#epsg_code = int(raster_LSASAF.crs.data['init'][5:]) # This was for an older version
 print(epsg_code)
 
 # Now we need to update the metadata with new dimensions, transform (affine) 
