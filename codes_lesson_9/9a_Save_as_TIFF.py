@@ -1,4 +1,8 @@
-# Save the TVDI array as a TIF file (using metadata from teh LST TIF file)
+# ============================================================================== #
+# 9a_Save the TVDI map as a TIF file.
+# ============================================================================== #
+
+# Save the TVDI array as a TIF file (using metadata from the LST TIF file)
 with rasterio.open('/content/drive/MyDrive/gdrive_folder/LST_15_03_2017.tif') as src:
     raster = src.read(1)   
 
