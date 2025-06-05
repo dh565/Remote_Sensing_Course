@@ -1,3 +1,7 @@
+# ============================================================================== #
+# 4_Plot the maps of NDVI and LST and their histograms
+# ============================================================================== #
+
 # Prepare for plotting
 fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows=2, ncols=2, figsize=(10,10))
 plt.subplots_adjust(left=0.125, right = 0.9, wspace=0.3)
@@ -23,11 +27,11 @@ img3 = ax3.hist(TS.ravel(), bins=256, range=(280, 310), lw=4, ec='royalblue')
 ax3.set_aspect(1./ax3.get_data_ratio())
 ax3.set_title("Histogram LST")
 ax3.set_xlabel('LST')
-ax3.set_ylabel('No. de pixels')
+ax3.set_ylabel('Number of pixels')
 
 # Subplot Histogram NDVI
 img4 = ax4.hist(NDVI.ravel(), bins=256, range=(0.1, 0.9), lw=4, ec='royalblue')
 ax4.set_aspect(1./ax4.get_data_ratio())
 ax4.set_title("Histogram NDVI")
 ax4.set_xlabel('NDVI')
-ax4.set_ylabel('number of  pixels')
+ax4.set_ylabel('number of pixels')
