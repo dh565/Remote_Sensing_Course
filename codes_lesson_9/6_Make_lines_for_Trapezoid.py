@@ -1,4 +1,8 @@
-# Excluse negative NDVI values from image
+# ============================================================================== #
+# 6_Calculate the dry and wet lines from the trapezoid
+# ============================================================================== #
+
+# Exclude negative NDVI values from the image
 NDVI[NDVI < 0] = np.nan
 
 # List minimum LST (humid limit) and maximum LST (dry limit)
@@ -27,14 +31,14 @@ for val in NDVI_vector:
     TS_min_val = np.nan # all others get nan
     TS_max_val = np.nan
 
-  # Add found values to MiniList and MaxList lists
+  # Add found values to the MiniList and MaxList lists
   MiniList += [TS_min_val]
   MaxList  += [TS_max_val]
 
 # Create line for minimum, lower border
 MiniList_fin = []
 NDVI_fin     = []
-for i, val in enumerate(MiniList):# make sure, again, we exclude the nan's
+for i, val in enumerate(MiniList):# make sure, again, we exclude the NaNs
   if np.isfinite(val):
     MiniList_fin += [val]
     NDVI_fin += [NDVI_vector[i]]
