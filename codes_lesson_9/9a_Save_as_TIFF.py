@@ -11,5 +11,5 @@ kwargs = src.meta
 # Update kwargs (change in data type)
 kwargs.update( dtype=rasterio.float64, count = 1)
 
-with rasterio.open('TVDI.tif', 'w', **kwargs) as dst:
+with rasterio.open('/content/drive/MyDrive/gdrive_folder/TVDI.tif', 'w', **kwargs) as dst:
           dst.write_band(1, TVDI.astype(rasterio.float64))
