@@ -1,11 +1,17 @@
+# =============================================================================== #
+# 9d_Evaluate our TVDI with true SWC data.
+#  ============================================================================== #
+
 import scipy
 from matplotlib import ticker
 import cartopy.crs as ccrs
 import sklearn.metrics as metrics
 
+# We're getting the lists from previous code sections:
 Y_test = soil_mostire_list
 Y_pred = TVDI_list
 
+# Let's do some statistics...
 mean_TVDI = np.mean(Y_pred)
 #mae   = metrics.mean_absolute_error(Y_test, Y_pred)
 #mse   = metrics.mean_squared_error(Y_test, Y_pred)
