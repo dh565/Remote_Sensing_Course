@@ -1,3 +1,7 @@
+# ============================================================================== #
+# 7_Display the trapezoid (with dry and wet lines) and a density plot
+# ============================================================================== #
+
 # Plot the Trapez and a density scatterplot
 bins = [316, 316] # number of bins
 
