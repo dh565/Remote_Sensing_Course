@@ -5,10 +5,15 @@
 # Let's plot the TVDI image nicely...
 from matplotlib import ticker
 import cartopy.crs as ccrs
+import rioxarray
 
-TVDI = xr.open_rasterio(tvdiRaster)
+# Let's open the 'tvdiRaster' raster with rasterio:
+TVDI = rioxarray.open_rasterio(tvdiRaster)
+
+# Let's convert the raster into a numpy 2D array:
 array_input = TVDI
 
+# Now we're plotting the stuff...
 plt.figure(figsize=(9,6))
 
 ax1 = plt.axes(projection=ccrs.Robinson())
