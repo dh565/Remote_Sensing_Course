@@ -1,3 +1,7 @@
+# ============================================================================== #
+# 9b_Read vector data with SWC measurement points.
+#  ============================================================================== #
+
 # Get the SM data from the shapefile
 soil_mostire_list = []
 TVDI_list = []
