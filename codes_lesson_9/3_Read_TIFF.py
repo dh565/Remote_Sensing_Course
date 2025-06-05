@@ -1,5 +1,10 @@
-# Notice that you need to download the TIF files from GEE (using the procedure that we already used before)
-# and save the files saved in your PC or Google Drive folder if you use the Google Colab...
+# ============================================================================== #
+# 3_Read TIFF from your folder (IMPORTANT - read next comments)
+# ============================================================================== #
+
+# Notice that you need to download the TIF files from GEE (using the procedure 
+# that we already used before) and save the files saved on your PC or Google 
+# Drive folder if you use the Google Colab...
 
 # Read the NDVI TIF file using rasterio
 NDVI = rasterio.open('/content/drive/MyDrive/gdrive_folder/NDVI_22_03_2017.tif')
