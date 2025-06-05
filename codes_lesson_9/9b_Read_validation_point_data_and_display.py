@@ -2,14 +2,14 @@
 # 9b_Read vector data with SWC measurement points.
 #  ============================================================================== #
 
-# Get the SM data from the shapefile
+# Prepare arrays for data.
 soil_mostire_list = []
 TVDI_list = []
 
 # Open point shapefile
-pointData  = gpd.read_file('/content/drive/MyDrive/gdrive_folder/data_sm.shp') # YOU NEED to upload the data first, of course!
+pointData  = gpd.read_file('/content/drive/MyDrive/gdrive_folder/data_sm.shp') # IMPORTANT!!! You need to upload the data first!
 
-# Get TVDI raster
+# Retrieve the saved TVDI raster (IMPORTANT: Ensure this is the correct file name and it is located in the correct directory.)
 tvdiRaster = rasterio.open('/content/TVDI.tif')
 
 print(tvdiRaster.crs)
