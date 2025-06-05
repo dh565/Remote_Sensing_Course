@@ -1,4 +1,9 @@
+# ============================================================================== #
+# 5_Exclude irrelevant values from the numpy arrays...
+# ============================================================================== #
+
 # Exclude values that are greater than 3 std from the LST data 
+
 std  = np.nanstd(TS)  # calculate std
 mean = np.nanmean(TS) # calculate mean
 
