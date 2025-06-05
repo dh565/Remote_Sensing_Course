@@ -10,7 +10,7 @@ import rioxarray
 # Let's open the 'tvdiRaster' raster with rasterio:
 TVDI = rioxarray.open_rasterio(tvdiRaster)
 
-# Let's convert the raster into a numpy 2D array:
+# Let's convert the raster into a 2D numpy array:
 array_input = TVDI
 
 # Now we're plotting the stuff...
