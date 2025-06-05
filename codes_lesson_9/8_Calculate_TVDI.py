@@ -1,4 +1,8 @@
-# Use the linear regressions' coefficients to derive TVDI 
+# ============================================================================== #
+# 8_Calculate TVDI (general formula)
+# ============================================================================== #
+
+# Use the linear regression's coefficients to derive TVDI 
 a1, b1 = MaxPfit
 a2, b2 = MinPfit
 
