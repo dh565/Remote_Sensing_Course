@@ -2,7 +2,7 @@
 # 9b_Read vector data with SWC measurement points.
 #  ===================================================================================================== #
 
-# Prepare arrays for data.
+# Prepare lists for the data (we will use these lists in the following code sections).
 soil_mostire_list = []
 TVDI_list = []
 
